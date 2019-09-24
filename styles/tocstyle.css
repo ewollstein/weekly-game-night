@@ -1,0 +1,35 @@
+body {
+   background-color: rgba(120,170,115,1);
+   text-align: center
+}
+
+div {
+	background-color: rgba(150,220,115,.7);
+	width: 70%;
+	margin: auto;
+	padding:10px;
+}
+
+.valid {
+	width: 88px;
+	height: 31px;
+	border: 0px;
+}
+
+h1 {
+	line-height: 50px;
+	height: 30px;
+	background: transparent;
+}
+
+
+li {
+	text-align: left;
+	padding: 3px;
+	font-size: 1.3em;
+}
+
+a {
+	padding: 4px;
+	
+}

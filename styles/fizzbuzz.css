@@ -1,0 +1,67 @@
+html { 
+  background: url(../images/legacybaron.jpg) no-repeat center center fixed;
+  background-size: cover;
+  color: black;
+}  
+
+body {
+   background-color: transparent;
+   color: black;
+   text-align: center;
+}
+
+.valid {
+	width: 88px;
+	height: 31px;
+	border: 0px;
+}
+
+div p {
+	padding: 20px;
+	text-indent: 50px;
+	text-align: left;
+	font-size: 115%;
+	color: black;
+}
+
+.home {
+	width: 625px;
+	height: auto;
+	margin: auto;
+	background: rgba(223,218,218,0.9);
+	position: relative;
+	margin-top: -19px;
+}
+
+h1 {
+	line-height: 50px;
+	height: auto;
+	color: black;
+	padding-bottom: 10px;
+	width: 585px;
+	margin: auto;
+}
+
+h2 {
+	background-color: rgba(223,218,218,0.9);
+	height: 40px;
+	width: auto;
+	margin: -30px 20px 20px 20px;
+	border: 2px solid black;
+	color: black;
+	border-radius: 5px;
+}
+
+form {
+	margin: 0px 30px;
+	border: 2px solid black;
+	border-radius: 5px;
+	padding: 20px;
+	background: radial-gradient(rgba(223,218,218,1), rgba(153,153,153,1));
+	color: black;
+}
+
+#sentinelStats {
+	color: black;
+	padding-bottom: 20px;
+}
