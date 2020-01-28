@@ -1,0 +1,427 @@
+html, body {
+	height: 100%;
+}
+
+* {
+	box-sizing: border-box;
+}
+header {
+	background-color: rgba(102, 102, 102, 1);
+	position: fixed;
+	margin: 0;
+	top: 0;
+	padding: 0;
+	width: 100%;
+	align-items: center;
+	vertical-align: middle;
+	display: flex;
+	justify-content: space-evenly;
+	flex-flow: row wrap;
+	z-index: 10;
+}
+
+body {
+	/*background-color: transparent;*/
+	background-color: rgba(0,0,0,1);
+	text-align: center;
+	background-size: cover;
+	height: 100%;
+	width: 100%;
+	padding: 0;
+	margin: 0px;
+}
+
+.nav {	
+	color: white;
+	text-decoration: none;
+}
+
+a.nav {
+	background: transparent;
+	justify-content: space-around;
+	flex-flow: row nowrap;
+	height: 40px;
+}
+
+div.nav {
+	display: flex;
+	justify-content: space-evenly;
+	vertical-align: text-bottom;
+	width: 100%
+}
+
+input#searchBar {
+	display: none;
+	color: rgba(102, 102, 102, .8);
+	width: 20%;
+}
+
+button.gamegallery{
+	display: block;
+}
+
+a:hover {
+	opacity: .5;
+}
+
+.gamegallery:hover {
+	transform: scale(1.1);
+}
+
+div p {
+	padding: 20px;
+	text-indent: 40px;
+	text-align: left;
+	font-size: 1.15rem;
+	color: black;
+	margin: 0;
+}
+
+h1 {
+	line-height: 50px;
+	height: 30px;
+	background: transparent;
+	color: black;
+	font-size: 1.8rem;
+}
+
+h2 {
+	width: 40%;
+	margin: 0;
+	padding: 0;
+	color: black;
+	font-size: 1.1rem;
+	flex-flow: row nowrap;
+	margin-top: .5rem;
+	justify-self: auto;
+}
+
+.hide_game_wrapper {
+	display: none;
+	height: auto;
+	margin: auto;
+	background: rgba(223,218,218,1);
+	position: relative;
+	flex-flow: row wrap;
+	overflow: hidden;
+	margin-top: 1em;
+}
+
+aside.games {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+	text-align: center;
+}
+
+p.links{
+	padding: 0;
+	text-indent: 0;
+	text-align: center;
+}
+
+div.main {
+	display: flex;
+	width: 100%;
+	flex-flow: row wrap;
+	justify-content: space-evenly;
+}
+
+.games {
+	height: auto;
+	margin: auto;
+	background: rgba(223,218,218,1);
+	position: relative;
+	display: flex;
+	flex-flow: row wrap;
+	overflow: hidden;
+	margin-top: 1em;
+}
+
+.games_first_div {
+	height: auto;
+	margin: auto;
+	background: rgba(223,218,218,1);
+	position: relative;
+	display: flex;
+	flex-flow: row wrap;
+	overflow: hidden;
+}
+
+img.games {
+	flex-flow: row wrap;
+	width: 100%;
+	max-width: 200px;
+	height: auto;
+	margin: 0px;
+	overflow: hidden;
+	align-self: flex-start;
+}
+
+h1.games {
+	width: 100%;
+	font-size: 1.8rem;
+	margin: 0px;
+	justify-content: center;
+}
+
+p.games {
+	width: 95%;
+	margin: 10px;
+	padding: 0px;
+}
+
+section.games_left {
+	display: flex;
+	flex-flow: column wrap;
+	flex-basis: 30%;
+	min-width: 0px;
+	max-width: 200px;
+	height: 100%;
+	margin: 0px;
+	justify-content: center;
+	align-self: flex-start;
+	text-align: center;
+	align-items: stretch;
+}
+
+section.games_right {
+	display: flex;
+	flex-flow: row wrap;
+	flex-basis: 70%;
+	margin: 0px;
+	height: 100%;
+	justify-content: space-evenly;
+	align-content: center;
+}
+
+section.games_footer {
+	align-self: flex-end;
+	width: 100%;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-evenly;
+}
+
+h2.expansions {
+	flex-basis: 100%;
+	margin: 0px;
+	width: 100%
+}
+
+aside.expansions {
+	text-align: center;
+	justify-content: center;
+	align-content: center;
+	padding-bottom: 10px;
+}
+
+div.jigsaw {
+	background-image: url(../images/jigsaw.jpg);
+	background-position-x: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-color: black;
+	color: rgba(255,255,255,1);
+	margin: auto;
+	padding: 0;
+	display: flex;
+	justify-content: space-evenly;
+	flex-flow: row wrap;
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	overflow: hidden;
+}
+
+p.yes {
+	font-family: 'Lacquer', sans-serif;
+	color: rgba(225,0,50,1);
+	text-indent: 0;
+	padding: 0;
+}
+
+section.yesno {
+	width: 100%;
+	height: 40px;
+	display: flex;
+	align-self: flex-end;
+	justify-content: space-around;
+}
+
+form {
+	color: black;
+	display: none;
+	background: rgba(223,218,218,1);
+	border-radius: 10px;
+	align-self: center;
+}
+
+hr {
+	color: black;
+	height: 1px;
+	display: block;
+	width: 95%;
+}
+
+#myBtn {
+	display: none;
+	position: fixed;
+	bottom: 20px;
+	right: 30px;
+	z-index: 99;
+	border: none;
+	outline: none;
+	background-color: rgba(102, 102, 102, .8);
+	color: white;
+	cursor: pointer;
+	padding: 15px;
+	border-radius: 10px;
+  }
+  
+@media only screen and (max-width: 600px) {
+	div.main {margin-top: 33px;}
+	.games_first_div {width: 100%; margin-top: 33px;}
+	.nav {font-size: 1.2em;}
+	.header {height: 30px;}
+	.games {width: 100%;}
+	.expansions {width: 30%;}
+	div.jigsaw {margin-top: 30px;}
+	form {width: 100%; padding: 10%;}
+	select {line-height: 10%;}
+	p.yes {font-size: 1.5em;}
+	section.yesno {padding-bottom: 30%;}
+	img.randomgame {height: 125px; margin: auto; margin-top: 5%;}
+	button.gamegallery {display: flex; margin: 2%; padding: 0; height: 100px; border: 0;}
+	img.gamegallery {max-height: 100px; margin: 0; padding: 0; border: 0;}
+	#myBtn {font-size: .9rem;}
+}
+
+@media only screen and (min-width: 600px) and (orientation: landscape) {
+	div.main {margin-top: 40px;}
+	.games_first_div {width: 70%; margin-top: 40px;}
+	.nav {font-size: 1.3em;}
+	.header {height: 40px;}
+	.games {width: 40%;}
+	section.games_left {flex-basis: 20%;}
+	.expansions {width: 30%;}
+	div.jigsaw {margin-top: 40px;}
+	form {height: 75%; width: 65%; line-height: 1.2rem; font-size: 1.1rem; padding: 6%;}
+	select {line-height: 10%;}
+	p.yes {font-size: 1.2rem; padding-bottom: 25%;}
+	section.yesno {padding-bottom: 20%;}
+	img.randomgame {height: 125px; margin: auto; margin-top: 3%}
+	button.gamegallery {display: flex; margin: 2%; padding: 0; height: 100px; border: 0;}
+	img.gamegallery {max-height: 100px; margin: 0; padding: 0; border: 0;}
+	#myBtn {font-size: .9rem;}
+}
+
+@media only screen and (min-width: 600px) and (orientation: portrait) {
+	div.main {margin-top: 40px;}
+	.games_first_div {width: 70%; margin-top: 40px;}
+	.nav {font-size: 1.3em;}
+	.header {height: 40px;}
+	.games {width: 40%;}
+	section.games_left {flex-basis: 20%;}
+	.expansions {width: 30%;}
+	div.jigsaw {margin-top: 40px;}
+	form {height: 50%; width: 65%; line-height: 2.8rem; font-size: 2.8rem; padding: 6%;}
+	select {font-size: 2.4rem;}
+	option {font-size: 2.2rem; line-height: 2.2rem}
+	button {font-size: 2rem; line-height: 2rem;}
+	p.yes {font-size: 2.8rem; padding-bottom: 25%;}
+	section.yesno {padding-bottom: 20%;}
+	img.randomgame {height: 125px; margin: auto; margin-top: 3%}
+	button.gamegallery {display: flex; margin: 2%; padding: 0; height: 100px; border: 0;}
+	img.gamegallery {max-height: 100px; margin: 0; padding: 0; border: 0;}
+	#myBtn {font-size: .9rem;}
+}
+
+@media only screen and (min-width: 768) {
+	div.main {margin-top: 40px;}
+	.games_first_div {width: 70%; margin-top: 40px;}
+	.nav {font-size: 1.3em;}
+	.header {height: 40px;}
+	.games {width: 40%;}
+	section.games_left {flex-basis: 20%;}
+	.expansions {width: 30%;}
+	div.jigsaw {margin-top: 40px;}
+	form {height: 75%; width: 65%; line-height: 1.2rem; font-size: 1.1rem; padding: 6%;}
+	select {line-height: 10%;}
+	p.yes {font-size: 1.2rem; padding-bottom: 25%;}
+	section.yesno {padding-bottom: 20%;}
+	img.randomgame {max-height: 50%; margin: auto; margin-top: 3%}
+	button.gamegallery {display: flex; margin: 2%; padding: 0; height: 100px; border: 0;}
+	img.gamegallery {max-height: 100px; margin: 0; padding: 0; border: 0;}
+	#myBtn {font-size: .9rem;}
+}
+
+@media only screen and (min-width: 992px) and (orientation: portrait) {	
+	body {background: url(../images/tresbookcase.jpg) no-repeat center center fixed; background-size: cover;}
+	div.main {margin-top: 50px;}
+	.games_first_div {width: 40%; margin-top: 50px;}
+	.nav {font-size: 1.4em;}
+	input#searchBar {display: flex; font-size: 1.1rem;}
+	.header {height: 50px;}
+	.hide_game_wrapper {display: flex; width: 40%;}
+	.games {width: 40%; display: flex;}
+	.expansions {width: 25%;}
+	div.jigsaw {margin-top: 50px;}
+	form {height: auto; width: 55%; line-height: 2.9rem; font-size: 2.8rem; padding: 5%;}
+	select {font-size: 2.8rem; line-height: 10%;}
+	button {font-size: 2.8rem; line-height: 2rem;}
+	p.yes {font-size: 4em;}
+	section.yesno {padding-bottom: 25%;}
+	img.randomgame {height: 200px;	margin: auto; margin-top: 5%;}
+	button.gamegallery {display: none; background: transparent; border: 0; margin: 3%;}
+	img.gamegallery {max-height: 200px; margin: 0;}
+	#myBtn {font-size: 18px;}
+}
+
+@media only screen and (min-width: 992px) and (orientation: landscape) {	
+	body {background: url(../images/tresbookcase.jpg) no-repeat center center fixed; background-size: cover;}
+	div.main {margin-top: 50px;}
+	.games_first_div {width: 40%; margin-top: 50px;}
+	.nav {font-size: 1.4em;}
+	input#searchBar {display: flex; font-size: 1.1rem;}
+	.header {height: 50px;}
+	.hide_game_wrapper {display: flex; width: 40%;}
+	.games {width: 40%; display: flex;}
+	.expansions {width: 25%;}
+	div.jigsaw {margin-top: 50px;}
+	form {height: auto; width: 55%; line-height: 2rem; font-size: 2rem; padding: 5%;}
+	select {font-size: 2rem; line-height: 10%;}
+	button {font-size: 2rem; line-height: 2rem;}
+	p.yes {font-size: 2.5em;}
+	section.yesno {padding-bottom: 15%;}
+	img.randomgame {height: 200px;	margin: auto; margin-top: 5%;}
+	button.gamegallery {display: none; background: transparent; border: 0; margin: 3%;}
+	img.gamegallery {max-height: 200px; margin: 0;}
+	#myBtn {font-size: 18px;}
+}
+
+@media only screen and (min-width: 1200px) {
+	body {background: url(../images/tresbookcase.jpg) no-repeat center center fixed; background-size: cover;}
+	div.main {margin-top: 50px;}
+	.games_first_div {width: 40%; margin-top: 50px;}
+	.nav {font-size: 1.4em;}
+	input#searchBar {display: flex;}
+	.header {height: 50px;}
+	.hide_game_wrapper {display: flex; width: 40%;}
+	.games {width: 40%; display: flex;}
+	.expansions {width: 25%;}
+	div.jigsaw {margin-top: 50px;}
+	form {height: auto; width: 55%; line-height: 2rem; font-size: 2rem; padding: 5%;}
+	select {font-size: 2rem; line-height: 10%;}
+	button {font-size: 2rem; line-height: 2rem;}
+	p.yes {font-size: 2.5em;}
+	section.yesno {padding-bottom: 15%;}
+	img.randomgame {height: 200px;	margin: auto; margin-top: 5%;}
+	button.gamegallery {display: none; background: transparent; border: 0; margin: 3%;}
+	img.gamegallery {max-height: 200px; margin: 0;}
+	#myBtn {font-size: 18px;}
+}
