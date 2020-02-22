@@ -10,8 +10,8 @@
 	var betrayal = {gameName:"Betrayal at the House on the Hill", minPlayers:3, 				maxPlayers:6, gameStyle:"Both", image:"betrayal.jpg"};
 	var elderSign = {gameName:"Elder Sign", minPlayers:2, maxPlayers:8, 						 gameStyle:"Co-op", image:"eldersign.jpg"};
 	var legendary = {gameName:"Legendary", minPlayers:2, maxPlayers:5, 							 gameStyle:"Co-op", image:"legendary.jpg"};
-	var dcDeckBuilder = {gameName:"DC Deck Building Game", minPlayers:3, 							 maxPlayers:5, gameStyle:"Competitive", image:"dcdeckbuilder.jpg"};
-	var rollForTheGalaxy = {gameName:"Roll for the Galaxy", minPlayers:3, 								maxPlayers:5, gameStyle:"Competitive", image:"rollforthegalaxy.jpg"};
+	var dcDeckBuilder = {gameName:"DC Deck Building Game", minPlayers:3, 							 maxPlayers:5, gameStyle:"Competitive", 									 image:"dcdeckbuilder.jpg"};
+	var rollForTheGalaxy = {gameName:"Roll for the Galaxy", minPlayers:3, 								maxPlayers:5, gameStyle:"Competitive", 										image:"rollforthegalaxy.jpg"};
 	var timeStories = {gameName:"Time Stories", minPlayers:3, maxPlayers:4, 					   gameStyle:"Co-op", image:"timestories.jpg"};
 	var zombies = {gameName:"Zombies!", minPlayers:3, maxPlayers:6, 						   gameStyle:"Both", image:"zombies.jpg"};
 	var suburbia = {gameName:"Suburbia", minPlayers:3, maxPlayers:4, 							gameStyle:"Competitive", image:"suburbia.jpg"};
@@ -19,14 +19,16 @@
 	var bossMonster = {gameName:"Boss Monster", minPlayers:3, maxPlayers:4, 					   gameStyle:"Competitive", image:"bossmonster.jpg"};
 	var oregonTrail = {gameName:"The Oregon Trail", minPlayers:3, maxPlayers:6, 				   gameStyle:"Co-op", image:"oregontrail.jpg"};
 	var smashUp = {gameName:"Smash Up", minPlayers:3, maxPlayers:4, 						   gameStyle:"Competitive", image:"smashup.jpg"};
-	var merchants = {gameName:"Merchants & Marauders", minPlayers:3, 							 maxPlayers:4, gameStyle:"Competitive", image:"merchants.jpg"};
+	var merchants = {gameName:"Merchants & Marauders", minPlayers:3, 							 maxPlayers:4, gameStyle:"Competitive", 									 image:"merchants.jpg"};
 	var munchkin = {gameName:"Munchkin", minPlayers:3, maxPlayers:6, 							gameStyle:"Competitive", image:"munchkin.jpg"};
 	var dungeonRoll = {gameName:"Dungeon Roll", minPlayers:3, maxPlayers:5, 					   gameStyle:"Competitive", image:"dungeonroll.jpg"};
-	var forbiddenIsland = {gameName:"Forbidden Island", minPlayers:3, 								   maxPlayers:4, gameStyle:"Co-op", image:"forbiddenisland.jpg"};
-	var forbiddenDesert = {gameName:"Forbidden Desert", minPlayers:3, 								   maxPlayers:4, gameStyle:"Co-op", image:"forbiddendesert.jpg"};
+	var forbiddenIsland = {gameName:"Forbidden Island", minPlayers:3, 								   maxPlayers:4, gameStyle:"Co-op", 										   image:"forbiddenisland.jpg"};
+	var forbiddenDesert = {gameName:"Forbidden Desert", minPlayers:3, 								   maxPlayers:4, gameStyle:"Co-op",
+						   image:"forbiddendesert.jpg"};
 	var firefly = {gameName:"Firefly", minPlayers:3, maxPlayers:4, 							   gameStyle:"Competitive", image:"firefly.jpg"};
-	var rockPaperWizard = {gameName:"Rock, Paper, Wizard", minPlayers:3, 							   maxPlayers:6, gameStyle:"Competitive", image:"rockpaperwizard.jpg"};
-	var waterdeep = {gameName:"Lords of Waterdeep", minPlayers: 3, maxplayers: 5, gameStyle:"Competitive", image:"waterdeep.jpg"}
+	var rockPaperWizard = {gameName:"Rock, Paper, Wizard", minPlayers:3, 							   maxPlayers:6, gameStyle:"Competitive", 									   image:"rockpaperwizard.jpg"};
+	var waterdeep = {gameName:"Lords of Waterdeep", minPlayers: 3, maxplayers:5, 				 gameStyle:"Competitive", image:"waterdeep.jpg"};
+	var marvelchampions ={gameName:"Marvel Champions", minPlayers:1, 								  maxPlayers:4, gameStyle:"Co-op", 											  image:"marvelchampions.jpg"};
 
 	//Add game objects to an array
 	var gamesArray = [sentinels, 
@@ -56,7 +58,8 @@
 					  forbiddenIsland,
 					  firefly,
 					  rockPaperWizard,
-					  waterdeep];
+					  waterdeep,
+					  marvelchampions];
 	
 	//Write the array objects to the console for verification
 	console.log("");

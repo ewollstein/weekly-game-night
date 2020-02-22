@@ -290,6 +290,7 @@ hr {
 	.header {height: 30px;}
 	.games {width: 100%;}
 	.expansions {width: 30%;}
+	.have {height: 20px; vertical-align: text-bottom;}
 	div.jigsaw {margin-top: 30px;}
 	form {width: 100%; padding: 10%;}
 	select {line-height: 10%;}
@@ -309,6 +310,7 @@ hr {
 	.games {width: 40%;}
 	section.games_left {flex-basis: 20%;}
 	.expansions {width: 30%;}
+	.have {height: 20px; vertical-align: text-bottom;}
 	div.jigsaw {margin-top: 40px;}
 	form {height: 75%; width: 65%; line-height: 1.2rem; font-size: 1.1rem; padding: 6%;}
 	select {line-height: 10%;}
@@ -328,6 +330,7 @@ hr {
 	.games {width: 40%;}
 	section.games_left {flex-basis: 20%;}
 	.expansions {width: 30%;}
+	.have {height: 20px; vertical-align: text-bottom;}
 	div.jigsaw {margin-top: 40px;}
 	form {height: 50%; width: 65%; line-height: 2.8rem; font-size: 2.8rem; padding: 6%;}
 	select {font-size: 2.4rem;}
@@ -349,6 +352,7 @@ hr {
 	.games {width: 40%;}
 	section.games_left {flex-basis: 20%;}
 	.expansions {width: 30%;}
+	.have {height: 20px; vertical-align: text-bottom;}
 	div.jigsaw {margin-top: 40px;}
 	form {height: 75%; width: 65%; line-height: 1.2rem; font-size: 1.1rem; padding: 6%;}
 	select {line-height: 10%;}
@@ -370,6 +374,7 @@ hr {
 	.hide_game_wrapper {display: flex; width: 40%;}
 	.games {width: 40%; display: flex;}
 	.expansions {width: 25%;}
+	.have {height: 20px; vertical-align: text-bottom;}
 	div.jigsaw {margin-top: 50px;}
 	form {height: auto; width: 55%; line-height: 2.9rem; font-size: 2.8rem; padding: 5%;}
 	select {font-size: 2.8rem; line-height: 10%;}
@@ -392,6 +397,7 @@ hr {
 	.hide_game_wrapper {display: flex; width: 40%;}
 	.games {width: 40%; display: flex;}
 	.expansions {width: 25%;}
+	.have {height: 20px; vertical-align: text-bottom;}
 	div.jigsaw {margin-top: 50px;}
 	form {height: auto; width: 55%; line-height: 2rem; font-size: 2rem; padding: 5%;}
 	select {font-size: 2rem; line-height: 10%;}
@@ -414,6 +420,7 @@ hr {
 	.hide_game_wrapper {display: flex; width: 40%;}
 	.games {width: 40%; display: flex;}
 	.expansions {width: 25%;}
+	.have {height: 20px; vertical-align: text-bottom;}
 	div.jigsaw {margin-top: 50px;}
 	form {height: auto; width: 55%; line-height: 2rem; font-size: 2rem; padding: 5%;}
 	select {font-size: 2rem; line-height: 10%;}
