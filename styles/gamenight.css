@@ -56,7 +56,7 @@ input#searchBar {
 	width: 20%;
 }
 
-button.gamegallery{
+button.gamegallery {
 	display: block;
 }
 
@@ -116,7 +116,7 @@ aside.games {
 	text-align: center;
 }
 
-p.links{
+p.links {
 	padding: 0;
 	text-indent: 0;
 	text-align: center;
@@ -253,6 +253,14 @@ section.yesno {
 	justify-content: space-around;
 }
 
+.test {
+	display: block;
+	width: 100%;
+	height: 65%;
+	margin-top: 20%;
+	padding: 10%;
+}
+
 form {
 	color: black;
 	display: none;
@@ -282,7 +290,7 @@ hr {
 	padding: 15px;
 	border-radius: 10px;
   }
-  
+ 
 @media only screen and (max-width: 600px) {
 	div.main {margin-top: 33px;}
 	.games_first_div {width: 100%; margin-top: 33px;}

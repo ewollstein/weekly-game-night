@@ -1,5 +1,5 @@
 //Create individual game objects
-	var sentinels = {gameName:"Sentinels of the Multiverse", minPlayers:3,						 maxPlayers:5, gameStyle:"Co-op", image:"sentinels_box.jpg"};
+	var sentinels = {gameName:"Sentinels of the Multiverse", minPlayers:3,						 maxPlayers:5, gameStyle:"Co-op", image:"sentinels_box.jpg", linkID:"sentinels"};
 	var castles = {gameName:"Castles of Mad King Ludwig", minPlayers:3, 					   maxPlayers:4, gameStyle:"Competitive", image:"castles.jpg"};
 	var pandemic = {gameName:"Pandemic", minPlayers:3, maxPlayers:4, 							gameStyle:"Co-op", image:"pandemic.jpg"};
 	var ascension = {gameName:"Ascension", minPlayers:3, maxPlayers:4, 							 gameStyle:"Competitive", image:"ascension.jpg"};
@@ -28,7 +28,8 @@
 	var firefly = {gameName:"Firefly", minPlayers:3, maxPlayers:4, 							   gameStyle:"Competitive", image:"firefly.jpg"};
 	var rockPaperWizard = {gameName:"Rock, Paper, Wizard", minPlayers:3, 							   maxPlayers:6, gameStyle:"Competitive", 									   image:"rockpaperwizard.jpg"};
 	var waterdeep = {gameName:"Lords of Waterdeep", minPlayers: 3, maxplayers:5, 				 gameStyle:"Competitive", image:"waterdeep.jpg"};
-	var marvelchampions ={gameName:"Marvel Champions", minPlayers:1, 								  maxPlayers:4, gameStyle:"Co-op", 											  image:"marvelchampions.jpg"};
+	var marvelchampions = {gameName:"Marvel Champions", minPlayers:1, 								  maxPlayers:4, gameStyle:"Co-op", 											  image:"marvelchampions.jpg"};
+	var deathmaydie = {gameName:"Cthulhu: Death May Die", minPlayers:1, maxPlayers:5, gameStyle:"Co-op", image:"deathmaydie.jpg"};
 
 	//Add game objects to an array
 	var gamesArray = [sentinels, 
@@ -59,16 +60,26 @@
 					  firefly,
 					  rockPaperWizard,
 					  waterdeep,
-					  marvelchampions];
+					  marvelchampions,
+					  deathmaydie];
 	
 	//Write the array objects to the console for verification
 	console.log("");
 	console.log(gamesArray);
 
+var numPlayers; // = document.getElementById("numPlayers").value;
+
+function playerCount () {
+    if (numPlayers == null || numPlayers == undefined) {
+        numPlayers = document.getElementById("numPlayers").value;
+        console.log(numPlayers);
+    };
+};
+
 //Create the gameSelector function without params
 function gameSelector() {
 	//Retrieve input values from the HTML form
-	var numPlayers = document.getElementById("numPlayers").value;
+	playerCount();
 	var gameType = document.getElementById("gameType").value;
 
 	//Write inputs to the console
@@ -80,7 +91,7 @@ function gameSelector() {
 		if (numPlayers < gamesArray[i].minPlayers || numPlayers > gamesArray[i].maxPlayers) {
 			gamesArray.splice(i,1);
 		}
-	}
+	};
 	
 	//Displays the filtered array in the console
 	console.log("");
@@ -95,7 +106,7 @@ function gameSelector() {
 				 else if(gameType.toLowerCase() != gamesArray[i].gameStyle.toLowerCase()) {
 					gamesArray.splice(i,1);
 			 }
-		 }
+		 };
 	
 	//Writes the final array to the console to check changes
 	console.log("");
@@ -104,10 +115,10 @@ function gameSelector() {
 
 	//Calls the randomizeGames function after the array has been filtered
 	randomizeGames();
-}
+};
 
 //Creates the randomizeGames function to pick a random index value on the array after it has been filtered based on user inputs
-function randomizeGames () {
+/*function randomizeGames () {
 	var randomGame = gamesArray[Math.floor(Math.random()*gamesArray.length)];
 	var gameChoice = 'Time to play ' + randomGame.gameName + '!' + '<br>' + 	
 	'<img class="randomgame" src="images/' + randomGame.image + '">' + '<br>' + 
@@ -116,16 +127,33 @@ function randomizeGames () {
 	
 	document.getElementById("playTime").innerHTML = gameChoice;
 	console.log("Time to play: " + randomGame.gameName);
-}
+};*/
+
+function randomizeGames () {
+	var randomGame = gamesArray[Math.floor(Math.random()*gamesArray.length)];
+	console.log(randomGame);
+	let gameChoice;
+	if (randomGame == sentinels) {
+		gameChoice = "Time to play " + randomGame.gameName + "!" + "<br>" + '<a href="games.html#'+ randomGame.linkID + '"><img class="randomgame" src="images/' + randomGame.image + '"></a>' + "<br>" + '<button type="button" onclick="standardGame();">Standard</button><button type="button" onclick="vengeanceGame();">Vengeance</button>' + '<br><button type="button" onclick="randomizeGames();">Retry</button>' + '<button type="button" onclick="location.reload();">Close</button>';
+	} else {
+		gameChoice = 'Time to play ' + randomGame.gameName + '!' + '<br>' + 	
+	'<img class="randomgame" src="images/' + randomGame.image + '">' + '<br>' + 
+	'<br><button type="button" onclick="randomizeGames();">Retry</button>' + 
+	'<button type="button" onclick="location.reload();">Close</button>';
+	};
+
+	document.getElementById("playTime").innerHTML = gameChoice;
+	console.log("Time to play: " + randomGame.gameName);
+};
 
 //Creates a function to hide yes & no text and display the form
 function openPopUp() {
 	document.getElementById("playTime").style.display="block";
 	document.getElementById("yesno").style.display="none";
-}
+};
 
 //Creates a function to hide the form & display yes & no text again
 function closePopUp() {
 	document.getElementById("playTime").style.display="none";
 	document.getElementById("yesno").style.display="block";
-}
+};
