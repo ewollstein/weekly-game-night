@@ -101,7 +101,7 @@ function gameSelector() {
 	for (let i = (gamesArray.length - 1); i <= (gamesArray.length-1) && i >= 0;
 		 i--) {
 			 if(gameType === "either")
-				 randomizeGames();
+				 randomizeGames()
 				 else if(gameType === "sentinelsSTD")
 				   {standardGame();}
 				 else if (gameType === "vengeance")
