@@ -1,35 +1,34 @@
 //Create individual game objects
-	var sentinels = {gameName:"Sentinels of the Multiverse", minPlayers:3,						 maxPlayers:5, gameStyle:"Co-op", image:"sentinels_box.jpg", linkID:"sentinels"};
-	var castles = {gameName:"Castles of Mad King Ludwig", minPlayers:3, 					   maxPlayers:4, gameStyle:"Competitive", image:"castles.jpg"};
-	var pandemic = {gameName:"Pandemic", minPlayers:3, maxPlayers:4, 							gameStyle:"Co-op", image:"pandemic.jpg"};
-	var ascension = {gameName:"Ascension", minPlayers:3, maxPlayers:4, 							 gameStyle:"Competitive", image:"ascension.jpg"};
-	var midgard = {gameName:"Champions of Midgard", minPlayers:3, maxPlayers:4, 			   gameStyle:"Competitive", image:"champions.jpg"};
-	var gizmos = {gameName:"Gizmos", minPlayers:3, maxPlayers:4, 							  gameStyle:"Competitive", image:"gizmos.jpg"};
-	var smersh = {gameName:"Agents of SMERSH", minPlayers:3, maxPlayers:4, 					  gameStyle:"Co-op", image:"smersh.jpg"};
-	var darkMoon = {gameName:"Dark Moon", minPlayers:4, maxPlayers:7, 							gameStyle:"Both", image:"darkmoon.jpg"};
-	var betrayal = {gameName:"Betrayal at the House on the Hill", minPlayers:3, 				maxPlayers:6, gameStyle:"Both", image:"betrayal.jpg"};
-	var elderSign = {gameName:"Elder Sign", minPlayers:2, maxPlayers:8, 						 gameStyle:"Co-op", image:"eldersign.jpg"};
-	var legendary = {gameName:"Legendary", minPlayers:2, maxPlayers:5, 							 gameStyle:"Co-op", image:"legendary.jpg"};
-	var dcDeckBuilder = {gameName:"DC Deck Building Game", minPlayers:3, 							 maxPlayers:5, gameStyle:"Competitive", 									 image:"dcdeckbuilder.jpg"};
-	var rollForTheGalaxy = {gameName:"Roll for the Galaxy", minPlayers:3, 								maxPlayers:5, gameStyle:"Competitive", 										image:"rollforthegalaxy.jpg"};
-	var timeStories = {gameName:"Time Stories", minPlayers:3, maxPlayers:4, 					   gameStyle:"Co-op", image:"timestories.jpg"};
-	var zombies = {gameName:"Zombies!", minPlayers:3, maxPlayers:6, 						   gameStyle:"Both", image:"zombies.jpg"};
-	var suburbia = {gameName:"Suburbia", minPlayers:3, maxPlayers:4, 							gameStyle:"Competitive", image:"suburbia.jpg"};
-	var sevenWonders = {gameName:"7 Wonders", minPlayers:3, maxPlayers:7, 							gameStyle:"Competitive", image:"sevenwonders.jpg"};
-	var bossMonster = {gameName:"Boss Monster", minPlayers:3, maxPlayers:4, 					   gameStyle:"Competitive", image:"bossmonster.jpg"};
-	var oregonTrail = {gameName:"The Oregon Trail", minPlayers:3, maxPlayers:6, 				   gameStyle:"Co-op", image:"oregontrail.jpg"};
-	var smashUp = {gameName:"Smash Up", minPlayers:3, maxPlayers:4, 						   gameStyle:"Competitive", image:"smashup.jpg"};
-	var merchants = {gameName:"Merchants & Marauders", minPlayers:3, 							 maxPlayers:4, gameStyle:"Competitive", 									 image:"merchants.jpg"};
-	var munchkin = {gameName:"Munchkin", minPlayers:3, maxPlayers:6, 							gameStyle:"Competitive", image:"munchkin.jpg"};
-	var dungeonRoll = {gameName:"Dungeon Roll", minPlayers:3, maxPlayers:5, 					   gameStyle:"Competitive", image:"dungeonroll.jpg"};
-	var forbiddenIsland = {gameName:"Forbidden Island", minPlayers:3, 								   maxPlayers:4, gameStyle:"Co-op", 										   image:"forbiddenisland.jpg"};
-	var forbiddenDesert = {gameName:"Forbidden Desert", minPlayers:3, 								   maxPlayers:4, gameStyle:"Co-op",
-						   image:"forbiddendesert.jpg"};
-	var firefly = {gameName:"Firefly", minPlayers:3, maxPlayers:4, 							   gameStyle:"Competitive", image:"firefly.jpg"};
-	var rockPaperWizard = {gameName:"Rock, Paper, Wizard", minPlayers:3, 							   maxPlayers:6, gameStyle:"Competitive", 									   image:"rockpaperwizard.jpg"};
-	var waterdeep = {gameName:"Lords of Waterdeep", minPlayers: 3, maxplayers:5, 				 gameStyle:"Competitive", image:"waterdeep.jpg"};
-	var marvelchampions = {gameName:"Marvel Champions", minPlayers:1, 								  maxPlayers:4, gameStyle:"Co-op", 											  image:"marvelchampions.jpg"};
-	var deathmaydie = {gameName:"Cthulhu: Death May Die", minPlayers:1, maxPlayers:5, gameStyle:"Co-op", image:"deathmaydie.jpg"};
+	var sentinels = {gameName:"Sentinels of the Multiverse", minPlayers:3,			maxPlayers:5, gameStyle:"Co-op", image:"sentinels_box.jpg",            		linkID:"sentinels"};
+	var castles = {gameName:"Castles of Mad King Ludwig", minPlayers:3, 			maxPlayers:4, gameStyle:"Competitive", image:"castles.jpg",    				linkID:"castles"};
+	var pandemic = {gameName:"Pandemic", minPlayers:3, maxPlayers:4, 				gameStyle:"Co-op", image:"pandemic.jpg", linkID:"pandemic"};
+	var ascension = {gameName:"Ascension", minPlayers:3, maxPlayers:4, 				gameStyle:"Competitive", image:"ascension.jpg", linkID:"ascension"};
+	var midgard = {gameName:"Champions of Midgard", minPlayers:3, maxPlayers:4, 	gameStyle:"Competitive", image:"champions.jpg", linkID:"midgard"};
+	var gizmos = {gameName:"Gizmos", minPlayers:3, maxPlayers:4,               		gameStyle:"Competitive", image:"gizmos.jpg", linkID:"gizmos"};
+	var smersh = {gameName:"Agents of SMERSH", minPlayers:3, maxPlayers:4, 			gameStyle:"Co-op", image:"smersh.jpg", linkID:"smersh"};
+	var darkMoon = {gameName:"Dark Moon", minPlayers:4, maxPlayers:7, 				gameStyle:"Both", image:"darkmoon.jpg", linkID:"darkmoon"};
+	var betrayal = {gameName:"Betrayal at the House on the Hill", minPlayers:3, 	maxPlayers:6, gameStyle:"Both", image:"betrayal.jpg", linkID:"betrayal"};
+	var elderSign = {gameName:"Elder Sign", minPlayers:2, maxPlayers:8, 			gameStyle:"Co-op", image:"eldersign.jpg", linkID:"eldersign"};
+	var legendary = {gameName:"Legendary", minPlayers:2, maxPlayers:5, 				gameStyle:"Co-op", image:"legendary.jpg", linkID:"legendary"};
+	var dcDeckBuilder = {gameName:"DC Deck Building Game", minPlayers:3,       		maxPlayers:5, gameStyle:"Competitive", image:"dcdeckbuilder.jpg", 			linkID:"dcdeckbuilder"};
+	var rollForTheGalaxy = {gameName:"Roll for the Galaxy", minPlayers:3, 			maxPlayers:5, gameStyle:"Competitive", image:"rollforthegalaxy.jpg", 		linkID:"rollforthegalaxy"};
+	var timeStories = {gameName:"Time Stories", minPlayers:3, maxPlayers:4, 		gameStyle:"Co-op", image:"timestories.jpg", linkID:"timestories"};
+	var zombies = {gameName:"Zombies!", minPlayers:3, maxPlayers:6, 				gameStyle:"Both", image:"zombies.jpg", linkID:"zombies"};
+	var suburbia = {gameName:"Suburbia", minPlayers:3, maxPlayers:4,				gameStyle:"Competitive", image:"suburbia.jpg", linkID:"suburbia"};
+	var sevenWonders = {gameName:"7 Wonders", minPlayers:3, maxPlayers:7, 			gameStyle:"Competitive", image:"sevenwonders.jpg", 							linkID:"sevenwonders"};
+	var bossMonster = {gameName:"Boss Monster", minPlayers:3, maxPlayers:4,    		gameStyle:"Competitive", image:"bossmonster.jpg", linkID:"bossmonster"};
+	var oregonTrail = {gameName:"The Oregon Trail", minPlayers:3, maxPlayers:6, 	gameStyle:"Co-op", image:"oregontrail.jpg", linkID:"oregontrail"};
+	var smashUp = {gameName:"Smash Up", minPlayers:3, maxPlayers:4, 				gameStyle:"Competitive", image:"smashup.jpg", linkID:"smashup"};
+	var merchants = {gameName:"Merchants & Marauders", minPlayers:3, 				maxPlayers:4, gameStyle:"Competitive", image:"merchants.jpg", 				linkID:"merchants"};
+	var munchkin = {gameName:"Munchkin", minPlayers:3, maxPlayers:6, 				gameStyle:"Competitive", image:"munchkin.jpg", linkID:"munchkin"};
+	var dungeonRoll = {gameName:"Dungeon Roll", minPlayers:3, maxPlayers:5,    		gameStyle:"Competitive", image:"dungeonroll.jpg", linkID:"dungeonroll"};
+	var forbiddenIsland = {gameName:"Forbidden Island", minPlayers:3, 				maxPlayers:4, gameStyle:"Co-op", image:"forbiddenisland.jpg", 		   		linkID:"forbiddenisland"};
+	var forbiddenDesert = {gameName:"Forbidden Desert", minPlayers:3, 				maxPlayers:4, gameStyle:"Co-op", image:"forbiddendesert.jpg", 				linkID:"forbiddendesert"};
+	var firefly = {gameName:"Firefly", minPlayers:3, maxPlayers:4, 					gameStyle:"Competitive", image:"firefly.jpg", linkID:"firefly"};
+	var rockPaperWizard = {gameName:"Rock, Paper, Wizard", minPlayers:3, 			maxPlayers:6, gameStyle:"Competitive", image:"rockpaperwizard.jpg", 		linkID:"rockpaperwizard"};
+	var waterdeep = {gameName:"Lords of Waterdeep", minPlayers: 3, 					maxplayers:5, gameStyle:"Competitive", image:"waterdeep.jpg", 				linkID:"waterdeep"};
+	var marvelchampions = {gameName:"Marvel Champions", minPlayers:1, 				maxPlayers:4, gameStyle:"Co-op", image:"marvelchampions.jpg", 				linkID:"marvelchampions"};
+	var deathmaydie = {gameName:"Cthulhu: Death May Die", minPlayers:1, 	   		maxPlayers:5, gameStyle:"Co-op", image:"deathmaydie.jpg", 					linkID:"deathmaydie"};
 
 	//Add game objects to an array
 	var gamesArray = [sentinels, 
@@ -102,9 +101,14 @@ function gameSelector() {
 	for (let i = (gamesArray.length - 1); i <= (gamesArray.length-1) && i >= 0;
 		 i--) {
 			 if(gameType === "either")
-				 break
+				 randomizeGames();
+				 else if(gameType === "sentinelsSTD")
+				   {standardGame();}
+				 else if (gameType === "vengeance")
+				   {vengeanceGame();}
 				 else if(gameType.toLowerCase() != gamesArray[i].gameStyle.toLowerCase()) {
 					gamesArray.splice(i,1);
+					randomizeGames();
 			 }
 		 };
 	
@@ -112,9 +116,6 @@ function gameSelector() {
 	console.log("");
 	console.log(gamesArray);
 	console.log("");
-
-	//Calls the randomizeGames function after the array has been filtered
-	randomizeGames();
 };
 
 //Creates the randomizeGames function to pick a random index value on the array after it has been filtered based on user inputs
@@ -134,12 +135,9 @@ function randomizeGames () {
 	console.log(randomGame);
 	let gameChoice;
 	if (randomGame == sentinels) {
-		gameChoice = "Time to play " + randomGame.gameName + "!" + "<br>" + '<a href="games.html#'+ randomGame.linkID + '"><img class="randomgame" src="images/' + randomGame.image + '"></a>' + "<br>" + '<button type="button" onclick="standardGame();">Standard</button><button type="button" onclick="vengeanceGame();">Vengeance</button>' + '<br><button type="button" onclick="randomizeGames();">Retry</button>' + '<button type="button" onclick="location.reload();">Close</button>';
+		gameChoice = `Time to play ${randomGame.gameName}!<br><a href="games.html#${randomGame.linkID}"><img class="randomgame" src="images/${randomGame.image}"></a><br><button type="button" onclick="standardGame();">Standard</button><button type="button" onclick="vengeanceGame();">Vengeance</button><br><button type="button" onclick="randomizeGames();">Retry</button><button type="button" onclick="location.reload();">Close</button>`;
 	} else {
-		gameChoice = 'Time to play ' + randomGame.gameName + '!' + '<br>' + 	
-	'<img class="randomgame" src="images/' + randomGame.image + '">' + '<br>' + 
-	'<br><button type="button" onclick="randomizeGames();">Retry</button>' + 
-	'<button type="button" onclick="location.reload();">Close</button>';
+		gameChoice = `Time to play ${randomGame.gameName}!<br><a href="games.html#${randomGame.linkID}"><img class="randomgame" src="images/${randomGame.image}"></a><br><br><button type="button" onclick="randomizeGames();">Retry</button><button type="button" onclick="location.reload();">Close</button>`;
 	};
 
 	document.getElementById("playTime").innerHTML = gameChoice;
