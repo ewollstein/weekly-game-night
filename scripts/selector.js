@@ -26,9 +26,12 @@
 	var forbiddenDesert = {gameName:"Forbidden Desert", minPlayers:3, 				maxPlayers:4, gameStyle:"Co-op", image:"forbiddendesert.jpg", 				linkID:"forbiddendesert"};
 	var firefly = {gameName:"Firefly", minPlayers:3, maxPlayers:4, 					gameStyle:"Competitive", image:"firefly.jpg", linkID:"firefly"};
 	var rockPaperWizard = {gameName:"Rock, Paper, Wizard", minPlayers:3, 			maxPlayers:6, gameStyle:"Competitive", image:"rockpaperwizard.jpg", 		linkID:"rockpaperwizard"};
-	var waterdeep = {gameName:"Lords of Waterdeep", minPlayers: 3, 					maxplayers:5, gameStyle:"Competitive", image:"waterdeep.jpg", 				linkID:"waterdeep"};
+	var waterdeep = {gameName:"Lords of Waterdeep", minPlayers: 3, 					maxPlayers: 5, gameStyle:"Competitive", image:"waterdeep.jpg", 				linkID:"waterdeep"};
 	var marvelchampions = {gameName:"Marvel Champions", minPlayers:1, 				maxPlayers:4, gameStyle:"Co-op", image:"marvelchampions.jpg", 				linkID:"marvelchampions"};
 	var deathmaydie = {gameName:"Cthulhu: Death May Die", minPlayers:1, 	   		maxPlayers:5, gameStyle:"Co-op", image:"deathmaydie.jpg", 					linkID:"deathmaydie"};
+	var reckoners ={gameName:"The Reckoners", minPlayers:3, maxPlayers:6, 
+		gameStyle: "Co-op", image:"reckoners.jpg", linkID:"reckoners"};
+	var obscurio = {gameName: "Obscurio", minPlayers:2, maxPlayers:8, 				gameStyle: "Both", image:"obscurio.jpg", linkID:"obscurio"};
 
 	//Add game objects to an array
 	var gamesArray = [sentinels, 
@@ -60,7 +63,9 @@
 					  rockPaperWizard,
 					  waterdeep,
 					  marvelchampions,
-					  deathmaydie];
+					  deathmaydie,
+					  reckoners,
+					  obscurio];
 	
 	//Write the array objects to the console for verification
 	console.log("");
@@ -135,9 +140,9 @@ function randomizeGames () {
 	console.log(randomGame);
 	let gameChoice;
 	if (randomGame == sentinels) {
-		gameChoice = `Time to play ${randomGame.gameName}!<br><a href="games.html#${randomGame.linkID}"><img class="randomgame" src="images/${randomGame.image}"></a><br><button type="button" onclick="standardGame();">Standard</button><button type="button" onclick="vengeanceGame();">Vengeance</button><br><button type="button" onclick="randomizeGames();">Retry</button><button type="button" onclick="location.reload();">Close</button>`;
+		gameChoice = `Time to play ${randomGame.gameName}!<br><a href="./gamepages/${randomGame.linkID}.html"><img class="randomgame" src="images/${randomGame.image}"></a><br><button type="button" onclick="standardGame();">Standard</button><button type="button" onclick="vengeanceGame();">Vengeance</button><br><button type="button" onclick="randomizeGames();">Retry</button><button type="button" onclick="location.reload();">Close</button>`;
 	} else {
-		gameChoice = `Time to play ${randomGame.gameName}!<br><a href="games.html#${randomGame.linkID}"><img class="randomgame" src="images/${randomGame.image}"></a><br><br><button type="button" onclick="randomizeGames();">Retry</button><button type="button" onclick="location.reload();">Close</button>`;
+		gameChoice = "Time to play " + randomGame.gameName + "!<br><a href='./gamepages/" + randomGame.linkID + ".html'><img class='randomgame' src='images/" + randomGame.image + "'></a><br><br><button type='button' onclick='randomizeGames();'>Retry</button><button type='button' onclick='location.reload();'>Close</button>";
 	};
 
 	document.getElementById("playTime").innerHTML = gameChoice;
